@@ -21,13 +21,13 @@ console.log(itCompanies.toString()+ ' are big IT companies.')
 
 console.log(itCompanies.includes('Facebook'))
 console.log(itCompanies.includes('Dropbox'))
-//const find=[];
-// for(let i=0;i<itCompanies.length;i++){
-//     //if(itCompanies[i].toString().match(o/gi).length>2){
-//       //  if(itCompanies[i]==itCompanies[i].toString().match(/o/gi))
-//     console.log(find[i]=icotoString().match(/[o]+/gi))
-//     //}
-// }
+const find=[];
+for(let i=0;i<itCompanies.length;i++){
+    //if(itCompanies[i].toString().match(o/gi).length>2){
+      //  if(itCompanies[i]==itCompanies[i].toString().match(/o/gi))
+    console.log(find[i]=icotoString().match(/[o]+/gi))
+    //}
+}
 
 
 console.log(itCompanies.sort());
@@ -38,5 +38,19 @@ console.log(itCompanies.slice(-3))
 console.log(itCompanies.slice(itCompanies.indexOf(itCompanies[Math.floor(itCompanies.length/2)]),itCompanies.indexOf(itCompanies[Math.ceil(itCompanies.length/2)])))
 
 
-//console.log(itCompanies.shift())
-//console.log(itCompanies.shift(itCompanies.length/2))
+console.log(itCompanies.shift())
+//Remove the middle IT company or companies from the array
+console.log(itCompanies.splice(itCompanies.indexOf(itCompanies[Math.floor(itCompanies.length/2)]),1))
+console.log(itCompanies)
+
+//Remove the last IT company from the array
+console.log(itCompanies.splice(itCompanies.indexOf(itCompanies[itCompanies.length-1]),1))
+console.log(itCompanies)
+
+//Remove all IT companies
+console.log(itCompanies.splice())
+
+
+// const numbers = [1, 2, 3, 4, 5]
+// console.log(numbers.splice())    
+// console.log(numbers)  
