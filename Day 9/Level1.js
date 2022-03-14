@@ -102,3 +102,4 @@ console.log(find3)
 
 let find4=countries.findIndex(country=>country==='Russia')
 console.log(find4)
+
