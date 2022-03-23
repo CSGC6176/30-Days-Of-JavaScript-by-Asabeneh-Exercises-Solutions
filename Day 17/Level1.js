@@ -1,0 +1,6 @@
+localStorage.setItem('firstName','John')
+localStorage.setItem('lastName','Doe')
+localStorage.setItem('age','30')
+localStorage.setItem('country','United States')
+localStorage.setItem('city','Washington')
+console.log(localStorage)
