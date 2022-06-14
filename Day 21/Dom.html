@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document Object Model</title>
+   
+</head>
+<body>
+  
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    <h1></h1>
+
+    <script>
+        // const allTitles = document.getElementsByTagName('h1');
+        // const allTitles = document.getElementsByClassName('title');
+        // let firstTitle= document.getElementById('third-title')
+        // console.log(allTitles);
+        // console.log(allTitles.length);
+        // console.log(firstTitle)
+        let firstTitle= document.querySelector('h1');
+        console.log(firstTitle);
+        // for(let i=0;i<allTitles.length;i++){
+        //         console.log(allTitles[i]);
+        // }
+        // const allTitles = document.querySelectorAll('h1');
+        // console.log(allTitles.length);
+        // allTitles.forEach(title=>console.log(title))
+        const titles = document.querySelectorAll('h1');
+        titles[3].className ='title';
+        titles[3].id='fourth-title';
+        // titles[3].setAttribute('class','title')
+        // titles[3].setAttribute('id','fourth-title')
+
+          titles.forEach((title,id)=>{
+            title.style.fontSize='24px';
+            if(id % 2 == 0){
+                title.style.background='green'
+            }
+            else{
+                title.style.background='red'
+            }
+          })
+    </script>
+    
+</body>
+</html>

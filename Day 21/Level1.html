@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> DOM Level 1 Exercises </title>
+</head>
+<body>
+    <p class="Para" id="para-1">Para 1</p>
+    <p class="Para" id="para-2">Para 2</p>
+    <p class="Para" id="para-3">Para 3</p>
+    <p class="Para" id="para-4">Para 4</p>
+
+    <script>
+        let pq=document.querySelector('p');
+        
+        let ptag1= document.getElementsByTagName('p')[0];
+        let getAllP= document.getElementsByTagName('p');
+        let p1=document.querySelector('#para-1');
+        let p2=document.querySelector('#para-2');
+        let p3=document.querySelector('#para-3');
+        let p4=document.querySelector('#para-4');
+
+        let pid1=document.getElementById('para-1')
+        let pid2=document.getElementById('para-2')
+        let pid3=document.getElementById('para-3')
+        let pid4=document.getElementById('para-4')
+
+
+        console.log(p1)
+        // console.log(ptag)
+        // console.log(p2)
+        // console.log(p3)
+        // console.log(p4)
+
+        let pp=document.querySelectorAll('p');
+        pp.forEach(pa=>console.log(pa))
+        for(let i=0;i<getAllP.length;i++){
+            // console.log(getAllP[i])
+            console.log(getAllP[i].textContent)
+        }
+        pp[3].textContent='Fourth Paragraph'
+
+        pp[2].className='paragraph'
+        pp[2].id='second-para'
+
+        pp[0].setAttribute('class','paragraph');
+        pp[0].setAttribute('id','1st-para')
+        
+    </script>
+</body>
+</html>
